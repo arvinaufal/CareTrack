@@ -1,5 +1,4 @@
 const express = require('express');
-// const HistoryController = require('../controllers/HistoryController');
 const UserController = require('../controllers/UserController');
 const errorHandler = require('../middlewares/errorHandler');
 const MedicineController = require('../controllers/MedicineController');
@@ -9,8 +8,6 @@ const PatientController = require('../controllers/PatientController');
 const MedicalRecordController = require('../controllers/MedicalRecordController');
 const ExportController = require('../controllers/ExportController');
 const StatisticController = require('../controllers/StatisticController');
-// const BookController = require('../controllers/BookController');
-// const MailController = require('../controllers/mails/MailController');
 const router = express.Router();
 
 router.post('/api/register', UserController.create);
